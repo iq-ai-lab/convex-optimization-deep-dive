@@ -241,13 +241,15 @@ cvxpy==1.4.0        # 볼록 최적화 DSL
 matplotlib==3.8.0
 scikit-learn==1.3.0   # SVM, LogReg 비교
 cvxopt==1.3.0       # Interior Point 저수준 구현
+sympy==1.12         # 헤시안 기호 계산 (Ch2-02)
 jupyter==1.0.0
 ```
 
 ```bash
 # 환경 설치
 pip install numpy==1.26.0 scipy==1.11.0 cvxpy==1.4.0 \
-            matplotlib==3.8.0 scikit-learn==1.3.0 cvxopt==1.3.0 jupyter==1.0.0
+            matplotlib==3.8.0 scikit-learn==1.3.0 cvxopt==1.3.0 \
+            sympy==1.12 jupyter==1.0.0
 
 # 실험 노트북 실행
 jupyter notebook
