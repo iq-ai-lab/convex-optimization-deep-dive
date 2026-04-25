@@ -4,21 +4,21 @@
 
 ### **경사하강법을 쓰는 것** 과, 볼록 함수라면
 
-$$\text{국소 최적} \;=\; \text{전역 최적}$$
+$$\text{(국소 최적)} = \text{(전역 최적)}$$
 
 ### 이라는 **전역성 보장의 근거** 를 아는 것은 **다르다.**
 
 <br/>
 
-> *SVM 의 Lagrange dual 을 **푸는 것** 과,*
+> *SVM 의 Lagrange dual 을 **푸는 것** 과, **Slater 조건** 하에서*
 >
-> $$\min_x f(x) \;=\; \max_\lambda \; g(\lambda) \quad (\text{Slater 조건 하})$$
+> $$\min_x f(x) = \max_{\lambda \geq 0} g(\lambda)$$
 >
 > *의 **강쌍대성 (strong duality)** 이 성립하는 이유를 증명할 수 있는 것은 다르다.*
 >
 > *ADMM 을 **쓰는 것** 과, **Proximal Operator***
 >
-> $$\mathrm{prox}_{\eta g}(v) = \arg\min_x \left\{ g(x) + \frac{1}{2\eta}\|x - v\|^2 \right\}$$
+> $$\mathrm{prox}_{\eta g}(v) = \arg\min_x \, g(x) + \frac{1}{2\eta}\|x - v\|^2$$
 >
 > *가 왜 경사하강의 **일반화** 인지 유도할 수 있는 것은 다르다.*
 
