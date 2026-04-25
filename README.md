@@ -2,15 +2,37 @@
 
 # 📐 Convex Optimization Deep Dive
 
-**"경사하강법을 쓰는 것과, 볼록 함수라면 국소 최적 = 전역 최적이라는 전역성 보장의 근거를 아는 것은 다르다"**
+### **경사하강법을 쓰는 것** 과, 볼록 함수라면
+
+$$\text{국소 최적} \;=\; \text{전역 최적}$$
+
+### 이라는 **전역성 보장의 근거** 를 아는 것은 **다르다.**
 
 <br/>
 
-> *"SVM의 Lagrange dual을 푸는 것과, Slater 조건 하에서 강쌍대성이 성립하는 이유를 증명할 수 있는 것은 다르다.  
-> ADMM을 쓰는 것과, Proximal Operator가 왜 경사하강의 일반화인지 유도할 수 있는 것은 다르다."*
+> *SVM 의 Lagrange dual 을 **푸는 것** 과,*
+>
+> $$\min_x f(x) \;=\; \max_\lambda \; g(\lambda) \quad (\text{Slater 조건 하})$$
+>
+> *의 **강쌍대성 (strong duality)** 이 성립하는 이유를 증명할 수 있는 것은 다르다.*
+>
+> *ADMM 을 **쓰는 것** 과, **Proximal Operator***
+>
+> $$\mathrm{prox}_{\eta g}(v) = \arg\min_x \left\{ g(x) + \frac{1}{2\eta}\|x - v\|^2 \right\}$$
+>
+> *가 왜 경사하강의 **일반화** 인지 유도할 수 있는 것은 다르다.*
 
-볼록 집합의 공리적 정의에서 시작해 Lagrange 쌍대 이론 완전 유도, Proximal 방법 체계화, 딥러닝의 비볼록 현실까지  
-**"왜 전역 최적이 보장되는가"** 라는 질문으로 최적화의 수학적 기반을 끝까지 파헤칩니다
+<br/>
+
+**다루는 정리 (시간순)**
+
+Cauchy 1847 *Steepest descent* · Lagrange 1797 *Lagrange 승수* · Karush 1939 / Kuhn–Tucker 1951 *KKT 조건* · Slater 1950 *Slater 조건 + 강쌍대성* · Fenchel 1949 *Fenchel duality* · Moreau 1965 *Moreau envelope + Proximal Operator* · Boyd–Parikh 2011 *ADMM 현대 해설* · Vapnik 1995 *SVM dual*
+
+<br/>
+
+**핵심 질문**
+
+> **왜 전역 최적이 보장되는가** — 볼록 집합의 공리적 정의에서 시작해 Lagrange 쌍대 이론 완전 유도 · Proximal 방법 체계화 · 딥러닝의 비볼록 현실까지, 최적화의 수학적 기반을 끝까지 파헤칩니다.
 
 <br/>
 
